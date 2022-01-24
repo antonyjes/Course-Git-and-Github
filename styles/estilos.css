@@ -1,8 +1,14 @@
 h1{
-    color: red;
+    color: rgb(66, 33, 33);
 }
 
-div{
+header{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img{
+    width: 20rem;
 }
