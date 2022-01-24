@@ -1,18 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Git Practice</title>
-    <link rel="stylesheet" href="styles/estilos.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/estilos.css" />
+  </head>
+  <body>
     <header class="header">
-        <h1>
-            Course of Git and Github
-        </h1>
-        <img src="images/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f323733322f312a6d74736b3366515f4252656d466964686b656c3364412e706e67.png" alt="Git and Github image">
-    </header>    
-</body>
+      <h1>Course of Git and Github</h1>
+      <img
+        src="images/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f323733322f312a6d74736b3366515f4252656d466964686b656c3364412e706e67.png"
+        alt="Git and Github image"
+      />
+    </header>
+    <main>
+      <h3>Notas</h3>
+      <div class="notas">
+        <p>
+          GIT BASH $ git config --global user.name "Your name" $ git config
+          --global user.email you@name.com verificar nombre y correo $ git
+          config --list Iniciar un repositorio $ git init * $ ls -la (ver los
+          elementos ocultos) $ git status $ git add Autobiografía.txt $ git add
+          'Anotaciones Git.txt' * '' comillas si el nombre tiene espacios $ git
+          status $ git commit -m "Esta es la versión inicial" Cambio algo en el
+          archivo de texto u otro $ git status (verificar si se modificó un
+          archivo) $ git add 'Anotaciones Git.txt' (subir el archivo modificado)
+          $ git commit -m "Agregando notas de Git" Versiones $ git log --oneline
+          Chequear una versión anterior $ git checkout 92bf9a3 Volver a la
+          versión actual $ git checkout master Detalles de cada commit y la
+          version $ git log Detalles de cambios de un commit a otro $ git show
+          Agregar todos los archivos modificados $ git add . $ git commit -m
+          "Ejemplo agregando modificaciones de varios archivos" Volver a un
+          commit anterior para siempre(elimina los cambios después de ese
+          commit) $ git reset d4ce2ed(código del commit) --hard RAMAS Ver ramas
+          $ git branch Crear ramas $ git branch biografiamadre Pasar a una rama
+          $ git checkout biografiamadre *merge: unir el head de la rama master
+          con el head de la rama biografiamadre Unir ramas $ git checkout master
+          $ git merge biografiamadre *$ git commit -am "nuevo cambio" : comando
+          para invocar dos comandos git add y git commmit -m en uno solo; pero
+          el archivo ya debió ser agregado por un git add previamente.
+          *conflicto al realizar un merge: borrar todo lo innecesario y dejar lo
+          que vale, luego hacer un commit(git commit -am ...)
+        </p>
+      </div>
+    </main>
+  </body>
 </html>

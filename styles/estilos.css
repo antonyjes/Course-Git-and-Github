@@ -12,3 +12,11 @@ header{
 img{
     width: 20rem;
 }
+
+main{
+    padding: 3rem;
+}
+
+.notas{
+    text-align: justify;
+}
